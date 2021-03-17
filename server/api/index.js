@@ -1,12 +1,11 @@
 const router = require('express').Router();
 const companyRouter = require('./companies');
 const jobRouter = require('./jobs');
-
-// NOTE: Any routes that you put here are ALREADY mounted on `/api`
-// error-handling endware!
+const toDoRouter = require('./toDos');
 
 router.use('/companies', companyRouter);
 router.use('/jobs', jobRouter);
+router.use('/toDos', toDoRouter);
 
 router.use((req, res, next) => {
   const err = new Error('API route not found!');
