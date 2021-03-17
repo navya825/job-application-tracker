@@ -1,3 +1,3 @@
-### Backend Job Application Tracker!
+### Job Application Tracker!
 - Built in Node.js & Express
 
